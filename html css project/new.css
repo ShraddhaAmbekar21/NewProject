@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.banner {
+    width: 100%;
+    height: 850px;
+    background-image: linear-gradient(rgba(68, 68, 68, 0.75), rgba(27, 27, 27, 0.75)), url("D:/chanakyauni/HTML/homeimg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    width: auto;
+    padding: 35px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.logo {
+    height: 100px;
+    margin-left: 70px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 20px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: rgb(46, 231, 216);
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+.content {
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    text-align: center;
+    color: white;
+}
+
+.content h1 {
+    color: white;
+    font-size: 70px;
+    margin-top: 80px;
+    text-shadow: 2px 2px #ffc0c05e;
+}
+
+.content p {
+    margin: 20px;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+.ftr div.ft {
+    column-count: 4;
+}
+
+.ftr {
+    color: white;
+    position: absolute;
+    width: 100%;
+    bottom: -200px;
+    background-color: rgb(67, 66, 66, 0.5);
+    text-align: center;
+    padding: 10px;
+}
+
+.ftr dt {
+    font-weight: bold;
+    font-size: large;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.btn {
+    width: 200px;
+    background: transparent;
+    border-radius: 25px;
+    border: 2px solid greenyellow;
+    padding: 15px 0;
+    margin: 28px 18px;
+    color: bisque;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: greenyellow;
+    color: darkblue;
+}
